@@ -12,7 +12,7 @@
                     <h1 class="text-white">
                         Enjoy Luxurious Adventures Trip With Us
                     </h1>
-                    <div class="banner-box">
+                    {{--<div class="banner-box">
                         <form action="javascript:;">
                             <div class="form-group float-left mb-0">
                                 <div class="upper">
@@ -54,7 +54,7 @@
                                 <i class="search fa-solid fa-magnifying-glass"></i>
                             </button>
                         </form>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/explore-image1.jpg"
+                    src="{{ asset('frontend/assets/images/explore-image1.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -112,7 +112,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/explore-image2.jpg"
+                    src="{{ asset('frontend/assets/images/explore-image2.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -136,7 +136,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/explore-image3.jpg"
+                    src="{{ asset('frontend/assets/images/explore-image3.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -160,7 +160,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/explore-image4.jpg"
+                    src="{{ asset('frontend/assets/images/explore-image4.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -184,7 +184,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/explore-image5.jpg"
+                    src="{{ asset('frontend/assets/images/explore-image5.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -208,7 +208,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/explore-image6.jpg"
+                    src="{{ asset('frontend/assets/images/explore-image6.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -240,14 +240,14 @@
             <div class="about_wrapper position-relative" data-aos="zoom-in">
               <figure class="about-image mb-0">
                 <img
-                  src="./assets/images/about-image.jpg"
+                  src="{{ asset('frontend/assets/images/about-image.jpg')}}"
                   alt="image"
                   class="img-fluid"
                 />
               </figure>
               <figure class="about-locationimage mb-0">
                 <img
-                  src="./assets/images/about-locationimage.png"
+                  src="{{ asset('frontend/assets/images/about-locationimage.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -256,21 +256,21 @@
                 <div class="images">
                   <figure class="about-personimage1 mb-0 ml-0">
                     <img
-                      src="./assets/images/about-personimage1.jpg"
+                      src="{{ asset('frontend/assets/images/about-personimage1.jpg')}}"
                       alt="image"
                       class="img-fluid"
                     />
                   </figure>
                   <figure class="about-personimage2 mb-0">
                     <img
-                      src="./assets/images/about-personimage2.jpg"
+                      src="{{ asset('frontend/assets/images/about-personimage2.jpg')}}"
                       alt="image"
                       class="img-fluid"
                     />
                   </figure>
                   <figure class="about-personimage3 mb-0">
                     <img
-                      src="./assets/images/about-personimage3.jpg"
+                      src="{{ asset('frontend/assets/images/about-personimage3.jpg')}}"
                       alt="image"
                       class="img-fluid"
                     />
@@ -329,7 +329,7 @@
             <div class="service-box">
               <figure class="icon">
                 <img
-                  src="./assets/images/service-icon1.png"
+                  src="{{ asset('frontend/assets/images/service-icon1.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -339,7 +339,7 @@
                 Embark on thrilling expeditions and immerse yourself in
                 unforgettable experiences.
               </p>
-              <a href="./service.html" class="text-decoration-none learn_more"
+              <a href="#" class="text-decoration-none learn_more"
                 >Learn More<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -348,7 +348,7 @@
             <div class="service-box">
               <figure class="icon">
                 <img
-                  src="./assets/images/service-icon2.png"
+                  src="{{ asset('frontend/assets/images/service-icon2.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -358,7 +358,7 @@
                 Our seasoned guides ensure a safe and enriching adventure,
                 tailored to your needs.
               </p>
-              <a href="./service.html" class="text-decoration-none learn_more"
+              <a href="#" class="text-decoration-none learn_more"
                 >Learn More<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -367,7 +367,7 @@
             <div class="service-box">
               <figure class="icon">
                 <img
-                  src="./assets/images/service-icon3.png"
+                  src="{{ asset('frontend/assets/images/service-icon3.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -377,7 +377,7 @@
                 Choose from a variety of custom packages designed to suit every
                 traveler's desire.
               </p>
-              <a href="./service.html" class="text-decoration-none learn_more"
+              <a href="#" class="text-decoration-none learn_more"
                 >Learn More<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -386,7 +386,7 @@
             <div class="service-box">
               <figure class="icon">
                 <img
-                  src="./assets/images/service-icon4.png"
+                  src="{{ asset('frontend/assets/images/service-icon4.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -396,7 +396,7 @@
                 Explore breathtaking trails and discover the beauty of untouched
                 nature.
               </p>
-              <a href="./service.html" class="text-decoration-none learn_more"
+              <a href="#" class="text-decoration-none learn_more"
                 >Learn More<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -405,7 +405,7 @@
             <div class="service-box">
               <figure class="icon">
                 <img
-                  src="./assets/images/service-icon5.png"
+                  src="{{ asset('frontend/assets/images/service-icon5.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -415,7 +415,7 @@
                 Create lasting memories with family trips that are fun and
                 suitable for all ages.
               </p>
-              <a href="./service.html" class="text-decoration-none learn_more"
+              <a href="#" class="text-decoration-none learn_more"
                 >Learn More<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -424,7 +424,7 @@
             <div class="service-box">
               <figure class="icon">
                 <img
-                  src="./assets/images/service-icon6.png"
+                  src="{{ asset('frontend/assets/images/service-icon6.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -434,7 +434,7 @@
                 Receive a complete guide to make your adventure seamless and
                 worry-free.
               </p>
-              <a href="./service.html" class="text-decoration-none learn_more"
+              <a href="#" class="text-decoration-none learn_more"
                 >Learn More<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -453,7 +453,7 @@
                 Making Adventure Tours and Activities Accessible and Affordable
                 for Everyone.
               </h2>
-              <a href="./contact.html" class="text-decoration-none all_button"
+              <a href="#" class="text-decoration-none all_button"
                 >Book Now<i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
@@ -478,7 +478,7 @@
               <div class="place-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/place-image1.jpg"
+                    src="{{ asset('frontend/assets/images/place-image1.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -504,7 +504,7 @@
                   <div class="value">
                     <span class="money">$<span class="counter">128</span></span>
                     <a
-                      href="./contact.html"
+                      href="#"
                       class="text-decoration-none book_now"
                       >Book Now<i class="fa-solid fa-arrow-right"></i
                     ></a>
@@ -516,7 +516,7 @@
               <div class="place-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/place-image2.jpg"
+                    src="{{ asset('frontend/assets/images/place-image2.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -542,7 +542,7 @@
                   <div class="value">
                     <span class="money">$<span class="counter">390</span></span>
                     <a
-                      href="./contact.html"
+                      href="#"
                       class="text-decoration-none book_now"
                       >Book Now<i class="fa-solid fa-arrow-right"></i
                     ></a>
@@ -554,7 +554,7 @@
               <div class="place-box">
                 <figure class="image mb-0">
                   <img
-                    src="./assets/images/place-image3.jpg"
+                    src="{{ asset('frontend/assets/images/place-image3.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -580,7 +580,7 @@
                   <div class="value">
                     <span class="money">$<span class="counter">430</span></span>
                     <a
-                      href="./contact.html"
+                      href="#"
                       class="text-decoration-none book_now"
                       >Book Now<i class="fa-solid fa-arrow-right"></i
                     ></a>
@@ -603,35 +603,35 @@
             >
               <figure class="testimonial-circle image mb-0">
                 <img
-                  src="./assets/images/testimonial-centerimage.jpg"
+                  src="{{ asset('frontend/assets/images/testimonial-centerimage.jpg')}}"
                   alt="image"
                   class="img-fluid"
                 />
               </figure>
               <figure class="testimonial-image1 image mb-0">
                 <img
-                  src="./assets/images/testimonial-image1.jpg"
+                  src="{{ asset('frontend/assets/images/testimonial-image1.jpg')}}"
                   alt="image"
                   class="img-fluid"
                 />
               </figure>
               <figure class="testimonial-image2 image mb-0">
                 <img
-                  src="./assets/images/testimonial-image2.jpg"
+                  src="{{ asset('frontend/assets/images/testimonial-image2.jpg')}}"
                   alt="image"
                   class="img-fluid"
                 />
               </figure>
               <figure class="testimonial-image3 image mb-0">
                 <img
-                  src="./assets/images/testimonial-image3.jpg"
+                  src="{{ asset('frontend/assets/images/testimonial-image3.jpg')}}"
                   alt="image"
                   class="img-fluid"
                 />
               </figure>
               <figure class="testimonial-image4 image mb-0">
                 <img
-                  src="./assets/images/testimonial-image4.jpg"
+                  src="{{ asset('frontend/assets/images/testimonial-image4.jpg')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -663,7 +663,7 @@
                         <div class="content">
                           <figure class="testimonial-quote">
                             <img
-                              src="./assets/images/testimonial-quote.png"
+                              src="{{ asset('frontend/assets/images/testimonial-quote.png')}}"
                               alt="image"
                               class="img-fluid"
                             />
@@ -689,7 +689,7 @@
                         <div class="content">
                           <figure class="testimonial-quote">
                             <img
-                              src="./assets/images/testimonial-quote.png"
+                              src="{{ asset('frontend/assets/images/testimonial-quote.png')}}"
                               alt="image"
                               class="img-fluid"
                             />
@@ -743,7 +743,7 @@
             <li>
               <figure class="mb-0">
                 <img
-                  src="./assets/images/partner1.png"
+                  src="{{ asset('frontend/assets/images/partner1.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -752,7 +752,7 @@
             <li>
               <figure class="mb-0">
                 <img
-                  src="./assets/images/partner2.png"
+                  src="{{ asset('frontend/assets/images/partner2.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -761,7 +761,7 @@
             <li>
               <figure class="mb-0 haus">
                 <img
-                  src="./assets/images/partner3.png"
+                  src="{{ asset('frontend/assets/images/partner3.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -770,7 +770,7 @@
             <li>
               <figure class="mb-0">
                 <img
-                  src="./assets/images/partner4.png"
+                  src="{{ asset('frontend/assets/images/partner4.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -781,7 +781,7 @@
             <li>
               <figure class="mb-0">
                 <img
-                  src="./assets/images/partner5.png"
+                  src="{{ asset('frontend/assets/images/partner5.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -790,7 +790,7 @@
             <li>
               <figure class="mb-0">
                 <img
-                  src="./assets/images/partner6.png"
+                  src="{{ asset('frontend/assets/images/partner6.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -799,7 +799,7 @@
             <li class="mb-0">
               <figure class="mb-0">
                 <img
-                  src="./assets/images/partner7.png"
+                  src="{{ asset('frontend/assets/images/partner7.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
@@ -808,7 +808,7 @@
             <li class="mb-0">
               <figure class="mb-0">
                 <img
-                  src="./assets/images/partner8.png"
+                  src="{{ asset('frontend/assets/images/partner8.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
