@@ -5,7 +5,7 @@ use App\Http\Controllers\{HomeController,ProfileController};
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend/index');
 });
 
 Route::get('/home',[HomeController::class, 'main']);
