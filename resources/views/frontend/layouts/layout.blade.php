@@ -74,30 +74,8 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown active">
-                                <a
-                                    class="nav-link dropdown-toggle dropdown-color navbar-text-color"
-                                    href="#"
-                                    id="navbarDropdown1"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Home
-                                </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item active">
-                                            <a class="dropdown-item nav-link" href="index.html">Enjoy Trip</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="index1.html">Travel World</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="index2.html">Explore Places</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About Us</a>

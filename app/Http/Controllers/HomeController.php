@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+<<<<<<< HEAD
     public function index()
     {
         return view('frontend.index');
@@ -29,4 +30,7 @@ class HomeController extends Controller
     {
         return view('frontend.tours_details');
     }
+=======
+    
+>>>>>>> 63246b404e62626ea3c47a294e58938b8a301317
 }
