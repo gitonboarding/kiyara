@@ -1,7 +1,7 @@
 @extends('frontend.layouts.layout')
 
 @section('contents')
-
+@section('banner')
 <!-- Banner -->
 <section class="banner-con position-relative">
     <div class="container">
@@ -72,6 +72,7 @@
         </div>
     </div>
 </section>
+@endsection
 <!-- end banner -->
   <!-- Explore -->
   <section class="explore-con" id="dropdown">

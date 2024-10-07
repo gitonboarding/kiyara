@@ -35,18 +35,24 @@
     <link href="{{ asset('frontend/assets/css/owl.theme.default.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('frontend/assets/css/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/magnific-popup.css') }}" rel="stylesheet" type="text/css">
+    <style>
+        .sub_banner .sub_banner_con::before {
+            background: url("{{ asset('frontend/assets/images/subbanner-backgroundimage.jpg') }}") !important;
+        }
+    </style>
 </head>
+
 
 
 
 <body>
 
     <a id="button"></a>
-    <div class="trip_banner_outer position-relative">
+    <div class=" sub_banner trip_banner_outer position-relative">
         <header class="header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light p-0">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{'/'}}">
                         <figure class="logo mb-0">
                             <img
                                 src="{{ asset('frontend/assets/images/logo.png')}}"
@@ -204,6 +210,7 @@
                 </nav>
             </div>
         </header>
+        @yield('banner')
     </div>
     <!-- End Header -->
     @yield('contents')
