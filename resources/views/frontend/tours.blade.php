@@ -50,7 +50,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="place-box">
                                 <figure class="image mb-0">
-                                    <img src="./assets/images/place-image1.jpg" alt="image" class="img-fluid">
+                                    <img src="{{ asset('frontend/assets/images/place-image1.jpg')}}" alt="image" class="img-fluid">
                                 </figure>
                                 <div class="lower_content">
                                     <div class="content">
@@ -68,7 +68,7 @@
                                     </a>
                                     <div class="value">
                                         <span class="money">$<span class="counter">128</span></span>
-                                        <a href="./contact.html" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href="#" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="place-box">
                                 <figure class="image mb-0">
-                                    <img src="./assets/images/place-image2.jpg" alt="image" class="img-fluid">
+                                    <img src="{{ asset('frontend/assets/images/place-image2.jpg')}}" alt="image" class="img-fluid">
                                 </figure>
                                 <div class="lower_content">
                                     <div class="content">
@@ -94,7 +94,7 @@
                                     </a>
                                     <div class="value">
                                         <span class="money">$<span class="counter">390</span></span>
-                                        <a href="./contact.html" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href="#" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="place-box">
                                 <figure class="image mb-0">
-                                    <img src="./assets/images/place-image3.jpg" alt="image" class="img-fluid">
+                                    <img src="{{ asset('frontend/assets/images/place-image3.jpg')}}" alt="image" class="img-fluid">
                                 </figure>
                                 <div class="lower_content">
                                     <div class="content">
@@ -120,7 +120,7 @@
                                     </a>
                                     <div class="value">
                                         <span class="money">$<span class="counter">430</span></span>
-                                        <a href="./contact.html" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href="#" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="place-box">
                                 <figure class="image mb-0">
-                                    <img src="./assets/images/place-image4.jpg" alt="image" class="img-fluid">
+                                    <img src="{{ asset('frontend/assets/images/place-image4.jpg')}}" alt="image" class="img-fluid">
                                 </figure>
                                 <div class="lower_content">
                                     <div class="content">
@@ -146,7 +146,7 @@
                                     </a>
                                     <div class="value">
                                         <span class="money">$<span class="counter">128</span></span>
-                                        <a href="./contact.html" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href="#" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="place-box">
                                 <figure class="image mb-0">
-                                    <img src="./assets/images/place-image5.jpg" alt="image" class="img-fluid">
+                                    <img src="{{ asset('frontend/assets/images/place-image5.jpg')}}" alt="image" class="img-fluid">
                                 </figure>
                                 <div class="lower_content">
                                     <div class="content">
@@ -172,7 +172,7 @@
                                     </a>
                                     <div class="value">
                                         <span class="money">$<span class="counter">390</span></span>
-                                        <a href="./contact.html" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                                        <a href="#" class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="place-box">
                                 <figure class="image mb-0">
-                                    <img src="./assets/images/place-image6.jpg" alt="image" class="img-fluid">
+                                    <img src="{{ asset('frontend/assets/images/place-image6.jpg')}}" alt="image" class="img-fluid">
                                 </figure>
                                 <div class="lower_content">
                                     <div class="content">
@@ -210,7 +210,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="place-box">
                                 <figure class="image mb-0">
-                                    <img src="./assets/images/place-image3.jpg" alt="image" class="img-fluid">
+                                    <img src="{{ asset('frontend/assets/images/place-image3.jpg')}}" alt="image" class="img-fluid">
                                 </figure>
                                 <div class="lower_content">
                                     <div class="content">
