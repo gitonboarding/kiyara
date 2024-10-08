@@ -92,14 +92,14 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
                 <div class="activity_wrapper position-relative" data-aos="zoom-in">
                     <figure class="activity-rightbackground mb-0">
-                        <img src="assets/images/activity-rightbackground.jpg" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/activity-rightbackground.jpg')}}" alt="image" class="img-fluid">
                     </figure>
                 </div>
             </div>
         </div>
     </div>
     <figure class="activity-bottomimage mb-0">
-        <img src="assets/images/activity-bottomimage.png" alt="image" class="img-fluid">
+        <img src="{{ asset('frontend/assets/images/activity-bottomimage.png')}}" alt="image" class="img-fluid">
     </figure>
 </section>
 <!-- Explore -->
@@ -119,7 +119,7 @@
                     <div class="item">
                         <div class="explore-box">
                             <figure class="image mb-0">
-                                <img src="./assets/images/explore-image1.jpg" alt="image" class="img-fluid">
+                                <img src="{{ asset('frontend/assets/images/explore-image1.jpg')}}" alt="image" class="img-fluid">
                             </figure>
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
@@ -139,7 +139,7 @@
                     <div class="item">
                         <div class="explore-box">
                             <figure class="image mb-0">
-                                <img src="./assets/images/explore-image2.jpg" alt="image" class="img-fluid">
+                                <img src="{{ asset('frontend/assets/images/explore-image2.jpg')}}" alt="image" class="img-fluid">
                             </figure>
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
@@ -159,7 +159,7 @@
                     <div class="item">
                         <div class="explore-box">
                             <figure class="image mb-0">
-                                <img src="./assets/images/explore-image3.jpg" alt="image" class="img-fluid">
+                                <img src="{{ asset('frontend/assets/images/explore-image3.jpg')}}" alt="image" class="img-fluid">
                             </figure>
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
@@ -179,7 +179,7 @@
                     <div class="item">
                         <div class="explore-box">
                             <figure class="image mb-0">
-                                <img src="./assets/images/explore-image4.jpg" alt="image" class="img-fluid">
+                                <img src="{{ asset('frontend/assets/images/explore-image4.jpg')}}" alt="image" class="img-fluid">
                             </figure>
                             <div class="rating">
                                 <i class="fa-solid fa-star"></i>
@@ -222,19 +222,19 @@
             <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="testimonial_wrapper position-relative" data-aos="zoom-in">
                     <figure class="testimonial-circle image mb-0">
-                        <img src="./assets/images/testimonial-centerimage.jpg" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/testimonial-centerimage.jpg')}}" alt="image" class="img-fluid">
                     </figure>
                     <figure class="testimonial-image1 image mb-0">
-                        <img src="./assets/images/testimonial-image1.jpg" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/testimonial-image1.jpg')}}" alt="image" class="img-fluid">
                     </figure>
                     <figure class="testimonial-image2 image mb-0">
-                        <img src="./assets/images/testimonial-image2.jpg" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/testimonial-image2.jpg')}}" alt="image" class="img-fluid">
                     </figure>
                     <figure class="testimonial-image3 image mb-0">
-                        <img src="./assets/images/testimonial-image3.jpg" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/testimonial-image3.jpg')}}" alt="image" class="img-fluid">
                     </figure>
                     <figure class="testimonial-image4 image mb-0">
-                        <img src="./assets/images/testimonial-image4.jpg" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/testimonial-image4.jpg')}}" alt="image" class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -256,7 +256,7 @@
                                         </p>
                                         <div class="content">
                                             <figure class="testimonial-quote">
-                                                <img src="./assets/images/testimonial-quote.png" alt="image" class="img-fluid">
+                                                <img src="{{ asset('frontend/assets/images/testimonial-quote.png')}}" alt="image" class="img-fluid">
                                             </figure>
                                             <div class="designation-outer">
                                                 <span class="name">Kevin James</span>
@@ -276,7 +276,7 @@
                                         </p>
                                         <div class="content">
                                             <figure class="testimonial-quote">
-                                                <img src="./assets/images/testimonial-quote.png" alt="image" class="img-fluid">
+                                                <img src="{{ asset('frontend/assets/images/testimonial-quote.png')}}" alt="image" class="img-fluid">
                                             </figure>
                                             <div class="designation-outer">
                                                 <span class="name">Kevin James</span>
@@ -316,44 +316,44 @@
             <ul class="list-unstyled mb-0" data-aos="fade-up">
                 <li>
                     <figure class="mb-0">
-                        <img src="./assets/images/partner1.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner1.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
                 <li>
                     <figure class="mb-0">
-                        <img src="./assets/images/partner2.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner2.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
                 <li>
                     <figure class="mb-0 haus">
-                        <img src="./assets/images/partner3.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner1.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
                 <li>
                     <figure class="mb-0">
-                        <img src="./assets/images/partner4.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner1.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
             </ul>
             <ul class="list-unstyled second mb-0" data-aos="fade-up">
                 <li>
                     <figure class="mb-0">
-                        <img src="./assets/images/partner5.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner1.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
                 <li>
                     <figure class="mb-0">
-                        <img src="./assets/images/partner6.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner1.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
                 <li class="mb-0">
                     <figure class="mb-0">
-                        <img src="./assets/images/partner7.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner1.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
                 <li class="mb-0">
                     <figure class="mb-0">
-                        <img src="./assets/images/partner8.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/partner1.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </li>
             </ul>
