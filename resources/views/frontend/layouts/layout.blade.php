@@ -35,6 +35,7 @@
     <link href="{{ asset('frontend/assets/css/owl.theme.default.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('frontend/assets/css/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/magnific-popup.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('frontend/assets/css/customs.css') }}" rel="stylesheet" type="text/css">
     <style>
         .sub_banner .sub_banner_con::before {
             background: url("{{ asset('frontend/assets/images/subbanner-backgroundimage.jpg') }}") !important;
@@ -75,113 +76,20 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="{{url('/')}}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Us</a>
+                                <a class="nav-link" href="{{url('/about')}}">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="destination.html">Destinations</a>
+                                <a class="nav-link" href="{{url('tours')}}">Tours</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle dropdown-color navbar-text-color"
-                                    href="#"
-                                    id="navbarDropdown2"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Pages
-                                </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="review.html">Review</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="faq.html">Faq</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="team.html">Team</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="service.html">Service</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="dropdown-item nav-link"
-                                                href="service-detail.html">Service Details</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="404.html">404</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="dropdown-item nav-link"
-                                                href="coming-soon.html">Coming Soon</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle dropdown-color navbar-text-color"
-                                    href="#"
-                                    id="navbarDropdown3"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Blog
-                                </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="blog.html">Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="dropdown-item nav-link"
-                                                href="single-blog.html">Single Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="load-more.html">Load More</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="one-column.html">One Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="two-column.html">Two Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="dropdown-item nav-link"
-                                                href="three-column.html">Three Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="dropdown-item nav-link"
-                                                href="three-colum-sidbar.html">Three Column Sidebar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="dropdown-item nav-link"
-                                                href="four-column.html">Four Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a
-                                                class="dropdown-item nav-link"
-                                                href="six-colum-full-wide.html">Six Column</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('contact')}}">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link book_now" href="contact.html">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="nav-link book_now" href="{{url('contact')}}">Book Now<i class="fa-solid fa-arrow-right"></i></a>
                             </li>
                         </ul>
                     </div>
