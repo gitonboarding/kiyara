@@ -236,23 +236,23 @@
       <div class="container">
         <div class="row align-items-center">
           <div
-            class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-12 text-lg-left text-center"
+            class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 text-lg-left text-center"
           >
             <div class="about_wrapper position-relative" data-aos="zoom-in">
               <figure class="about-image mb-0">
                 <img
-                  src="{{ asset('frontend/assets/images/about-image.jpg')}}"
+                  src="{{ asset('frontend/assets/images/travel-2.jpg')}}"
                   alt="image"
                   class="img-fluid"
                 />
               </figure>
-              <figure class="about-locationimage mb-0">
+              {{--<figure class="about-locationimage mb-0">
                 <img
                   src="{{ asset('frontend/assets/images/about-locationimage.png')}}"
                   alt="image"
                   class="img-fluid"
                 />
-              </figure>
+              </figure>--}}
               <div class="box" data-aos="fade-up">
                 <div class="images">
                   <figure class="about-personimage1 mb-0 ml-0">
@@ -286,7 +286,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="about_content" data-aos="fade-up">
               <h6>About Us</h6>
               <h2>Unveil Prime Destinations With Us</h2>
