@@ -28,10 +28,10 @@
             <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-12 text-lg-left text-center">
                 <div class="about_wrapper position-relative" data-aos="zoom-in">
                     <figure class="about-image mb-0">
-                        <img src="./assets/images/aboutpage-image.jpg" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/aboutpage-image.jpg')}}" alt="image" class="img-fluid">
                     </figure>
                     <figure class="about-locationimage mb-0">
-                        <img src="./assets/images/about-locationimage.png" alt="image" class="img-fluid">
+                        <img src="{{ asset('frontend/assets/images/about-locationimage.png')}}" alt="image" class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -103,7 +103,7 @@
     </figure>
 </section>
 <!-- Explore -->
-<section class="aboutexplore-con position-relative">
+{{--<section class="aboutexplore-con position-relative">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -200,9 +200,9 @@
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 <!-- Join -->
-<section class="join-con position-relative">
+{{--<section class="join-con position-relative">
     <div class="container">
         <div class="row">
             <div class="col-12 mx-auto">
@@ -214,9 +214,9 @@
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 <!-- Testimonial -->
-<section class="testimonial-con position-relative">
+{{--<section class="testimonial-con position-relative">
     <div class="container">
         <div class="row">
             <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -302,9 +302,9 @@
             </div>
         </div>
     </div>
-</section>
+</section>--}}
 <!-- Partner -->
-<section class="partner-con">
+{{--<section class="partner-con">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -359,7 +359,7 @@
             </ul>
         </div>
     </div>
-</section>
+</section>--}}
 
 
 

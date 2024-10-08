@@ -37,9 +37,7 @@
     <link href="{{ asset('frontend/assets/css/magnific-popup.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('frontend/assets/css/customs.css') }}" rel="stylesheet" type="text/css">
     <style>
-        .sub_banner .sub_banner_con::before {
-            background: url("{{ asset('frontend/assets/images/subbanner-backgroundimage.jpg') }}") !important;
-        }
+       
     </style>
 </head>
 

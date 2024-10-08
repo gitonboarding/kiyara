@@ -24,7 +24,7 @@ Project:  Atreves
 
 #    --e-global-color-primary: #ffffff;
 #    --e-global-color-secondary: #0f0200;
-#    --e-global-color-accent: #f26d52;
+#    --e-global-color-accent: #d11124;
 #    --e-global-color-text: #4c4c4c;
 # 	 --e-global-color-white: #ffffff;
 #    --e-global-color-black: #000000;
@@ -54,7 +54,7 @@ body {
 :root {
     --e-global-color-primary: #ffffff;
     --e-global-color-secondary: #0f0200;
-    --e-global-color-accent: #f26d52;
+    --e-global-color-accent: #d11124;
     --e-global-color-text: #4c4c4c;
 	--e-global-color-white: #ffffff;
     --e-global-color-black: #000000;
@@ -166,7 +166,7 @@ html{
     z-index: 5;
 }
 .header .logo img {
-    width: 145px;
+    width: 200px;
 }
 .navbar-collapse .navbar-nav{
     text-align: center;
@@ -329,7 +329,7 @@ html{
 /* Banner */
 
 .banner-con {
-    padding: 210px 0 330px;
+    padding: 210px 0 430px;
 }
 .banner-con:before {
     content: "";
@@ -1322,7 +1322,7 @@ html{
     height: 100%;
     opacity: 55%;
     position: absolute;
-    /* background: url(../images/subbanner-backgroundimage.jpg); */
+    background: url(../images/subbanner-backgroundimage.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

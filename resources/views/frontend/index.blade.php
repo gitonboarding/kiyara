@@ -89,7 +89,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="{{ asset('frontend/assets/images/explore-image1.jpg')}}"
+                    src="{{ asset('frontend/assets/images/chicago.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -113,7 +113,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="{{ asset('frontend/assets/images/explore-image2.jpg')}}"
+                    src="{{ asset('frontend/assets/images/london.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -137,7 +137,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="{{ asset('frontend/assets/images/explore-image3.jpg')}}"
+                    src="{{ asset('frontend/assets/images/tokyo.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -152,7 +152,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <span class="text-white">15 Places</span>
                     </div>
-                    <h4 class="text-white mb-0">Venice</h4>
+                    <h4 class="text-white mb-0">Tokyo</h4>
                   </div>
                 </div>
               </div>
@@ -161,7 +161,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="{{ asset('frontend/assets/images/explore-image4.jpg')}}"
+                    src="{{ asset('frontend/assets/images/spain.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -185,7 +185,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="{{ asset('frontend/assets/images/explore-image5.jpg')}}"
+                    src="{{ asset('frontend/assets/images/paris.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
@@ -200,7 +200,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <span class="text-white">16 Places</span>
                     </div>
-                    <h4 class="text-white mb-0">Tokyo</h4>
+                    <h4 class="text-white mb-0">Paris</h4>
                   </div>
                 </div>
               </div>
@@ -209,7 +209,7 @@
               <div class="explore-box">
                 <figure class="image mb-0">
                   <img
-                    src="{{ asset('frontend/assets/images/explore-image6.jpg')}}"
+                    src="{{ asset('frontend/assets/images/mumbai.jpg')}}"
                     alt="image"
                     class="img-fluid"
                   />
