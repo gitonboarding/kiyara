@@ -1063,11 +1063,23 @@
                                         </div>
                                         <!--end:Menu item-->
                                         <!--begin:Menu item-->
+                                        <div class="menu-item show menu-here-bg me-0 me-lg-2">
+                                            <!--begin:Menu link-->
+                                            <span class="menu-link">
+                                                <a href="{{route('tours.index')}}">
+                                                    <span class="menu-title">Enquiry</span>
+                                                </a>
+                                                <span class="menu-arrow d-lg-none"></span>
+                                            </span>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
                                         <div data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-0 me-lg-2">
                                             <!--begin:Menu link-->
                                             <span class="menu-link">
                                                 <a href="#">
-                                                    <span class="menu-title">contact</span>
+                                                    <span class="menu-title">Contact</span>
                                                 </a>
                                                 <span class="menu-arrow d-lg-none"></span>
                                             </span>

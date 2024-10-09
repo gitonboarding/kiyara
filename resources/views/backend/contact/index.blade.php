@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('Heading')
-List tours
+Total Enquiries
 @endsection
 @section('contents')
 

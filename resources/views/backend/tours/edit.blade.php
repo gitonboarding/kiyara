@@ -20,49 +20,49 @@ Edit Tour
                         <!--begin::Card header-->
                         <div class="card-header">
                             <div class="card-title">
-                                <h2>Tour Image</h2>
+                                <h2>Featured Image</h2>
                             </div>
                         </div>
                         <!--end::Card header-->
 
                         <!--begin::Card body-->
                         <div class="card-body pt-0">
-                            <style>
+                        <style>
                                 .image-input-placeholder {
-                                    background-image: url('svg/avatars/blank.svg');
+                                    background-image: url('{{ url(' backend/assets/media/svg/avatars/blank.svg') }}');
                                 }
 
                                 [data-bs-theme="dark"] .image-input-placeholder {
-                                    background-image: url('svg/avatars/blank-dark.svg');
+                                    background-image: url('{{ url(' backend/assets/media/svg/avatars/blank-dark.svg') }}');
                                 }
                             </style>
 
-                            <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url(/assets/media/svg/avatars/blank.svg)">
-                                <div class="image-input-wrapper w-125px h-125px" style="background-image: url('{{ asset($tour->image) }}')"></div>
+                            <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url('{{ url('backend/assets/media/svg/avatars/blank.svg') }}')">
+                                <div class="image-input-wrapper w-175px h-175px" style="background-image: url('{{ url('storage/' . $tour->image) }}')"></div>
 
                                 <label class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                                       data-kt-image-input-action="change"
-                                       data-bs-toggle="tooltip"
-                                       data-bs-dismiss="click"
-                                       title="Change avatar">
-                                    <i class="ki-duotone ki-pencil fs-6"></i>
+                                    data-kt-image-input-action="change"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-dismiss="click"
+                                    title="Change avatar">
+                                    <i class="ki-duotone ki-pencil"><span class="path1"></span><span class="path2"></span></i>
                                     <input type="file" name="image" accept=".png, .jpg, .jpeg" />
                                     <input type="hidden" name="avatar_remove" />
                                 </label>
 
                                 <span class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                                      data-kt-image-input-action="cancel"
-                                      data-bs-toggle="tooltip"
-                                      data-bs-dismiss="click"
-                                      title="Cancel avatar">
+                                    data-kt-image-input-action="cancel"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-dismiss="click"
+                                    title="Cancel avatar">
                                     <i class="ki-outline ki-cross fs-3"></i>
                                 </span>
 
                                 <span class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
-                                      data-kt-image-input-action="remove"
-                                      data-bs-toggle="tooltip"
-                                      data-bs-dismiss="click"
-                                      title="Remove avatar">
+                                    data-kt-image-input-action="remove"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-dismiss="click"
+                                    title="Remove avatar">
                                     <i class="ki-outline ki-cross fs-3"></i>
                                 </span>
                             </div>
@@ -146,16 +146,16 @@ Edit Tour
                                 });
                         </script>
                     </div>
-                </div>
 
-                <div class="d-flex justify-content-end">
-                    <a href="{{ route('tours.index') }}" id="kt_ecommerce_add_product_cancel" class="btn btn-light me-5">Cancel</a>
-                    <button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
-                        <span class="indicator-label">Save Changes</span>
-                        <span class="indicator-progress">Please wait...
-                            <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
-                        </span>
-                    </button>
+                    <div class="d-flex justify-content-end">
+                        <a href="{{ route('tours.index') }}" id="kt_ecommerce_add_product_cancel" class="btn btn-light me-5">Cancel</a>
+                        <button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
+                            <span class="indicator-label">Save Changes</span>
+                            <span class="indicator-progress">Please wait...
+                                <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>

@@ -19,7 +19,7 @@ Create a new tours
                         <div class="card-header">
                             <!--begin::Card title-->
                             <div class="card-title">
-                                <h2> Tours image</h2>
+                                <h2>Featured Image</h2>
                             </div>
 
                             <!--end::Card title-->
@@ -31,19 +31,20 @@ Create a new tours
                             <!--begin::Image input placeholder-->
                             <style>
                                 .image-input-placeholder {
-                                    background-image: url('svg/avatars/blank.svg');
+                                    background-image: url('{{ url(' backend/assets/media/svg/avatars/blank.svg') }}');
                                 }
 
                                 [data-bs-theme="dark"] .image-input-placeholder {
-                                    background-image: url('svg/avatars/blank-dark.svg');
+                                    background-image: url('{{ url(' backend/assets/media/svg/avatars/blank-dark.svg') }}');
                                 }
                             </style>
+
                             <!--end::Image input placeholder-->
 
                             <!--begin::Image input-->
-                            <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url(/assets/media/svg/avatars/blank.svg)">
+                            <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url('{{ url('backend/assets/media/svg/avatars/blank.svg') }}')">
                                 <!--begin::Image preview wrapper-->
-                                <div class="image-input-wrapper w-125px h-125px" style="background-image: url(/assets/media/avatars/300-1.jpg)"></div>
+                                <div class="image-input-wrapper w-175px h-175px" style="background-image: url('{{ url('backend/assets/media/svg/avatars/blank.svg') }}')"></div>
                                 <!--end::Image preview wrapper-->
 
                                 <!--begin::Edit button-->
