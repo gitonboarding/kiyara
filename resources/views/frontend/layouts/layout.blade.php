@@ -6,19 +6,8 @@
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('frontend/assets/images/favicon/apple-icon-57x57.png') }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('frontend/assets/images/favicon/apple-icon-60x60.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('frontend/assets/images/favicon/apple-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('frontend/assets/images/favicon/apple-icon-76x76.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('frontend/assets/images/favicon/apple-icon-114x114.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('frontend/assets/images/favicon/apple-icon-120x120.png') }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('frontend/assets/images/favicon/apple-icon-144x144.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('frontend/assets/images/favicon/apple-icon-152x152.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('frontend/assets/images/favicon/apple-icon-180x180.png') }}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('frontend/assets/images/favicon/android-icon-192x192.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('frontend/assets/images/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('frontend/assets/images/favicon/favicon-96x96.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('frontend/assets/images/favicon/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" href="frontend/assets/images/fevicon.png">
+
     <link rel="manifest" href="{{ asset('frontend/assets/images/favicon/manifest.json') }}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset('frontend/assets/images/favicon/ms-icon-144x144.png') }}">
@@ -37,7 +26,7 @@
     <link href="{{ asset('frontend/assets/css/magnific-popup.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('frontend/assets/css/customs.css') }}" rel="stylesheet" type="text/css">
     <style>
-       
+
     </style>
 </head>
 
@@ -48,15 +37,13 @@
 
     <a id="button"></a>
     <div class=" sub_banner trip_banner_outer position-relative">
+
         <header class="header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light p-0">
                     <a class="navbar-brand" href="{{'/'}}">
                         <figure class="logo mb-0">
-                            <img
-                                src="{{ asset('frontend/assets/images/logo.png')}}"
-                                alt="image"
-                                class="img-fluid" />
+                            <img src="{{ asset('frontend/assets/images/logo.png') }}" alt="image" class="img-fluid" />
                         </figure>
                     </a>
                     <button
@@ -73,27 +60,27 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{url('/')}}">Home</a>
+                            <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ url('/') }}">Home</a>
+                            </li>
+                            <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ url('/about') }}">About Us</a>
+                            </li>
+                            <li class="nav-item {{ Request::is('tours') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ url('tours') }}">Tours</a>
+                            </li>
+                            <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ url('contact') }}">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('/about')}}">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{url('tours')}}">Tours</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{url('contact')}}">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link book_now" href="{{url('contact')}}">Enquire Now<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="nav-link book_now" href="{{ url('contact') }}">Enquire Now<i class="fa-solid fa-arrow-right"></i></a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
+
         @yield('banner')
     </div>
     <!-- End Header -->
@@ -105,7 +92,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="upper_portion">
-                            <a href="index.html">
+                            <a href="{{'/'}}">
                                 <figure class="footer-logo mb-0">
                                     <img
                                         class="img-fluid"
@@ -166,16 +153,16 @@
                                 <h5 class="heading">Navigation</h5>
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="#">Home</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="{{'/'}}">Home</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="#">About Us</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="{{url('/about')}}">About Us</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="#">Tours</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="{{url('/tours')}}">Tours</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="#">Contact</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="{{url('/contact')}}">Contact</a>
                                     </li>
                                 </ul>
                             </div>
