@@ -47,36 +47,47 @@ Contact Us
                                 <th style="width: 300px;">Message</th>
                             </tr>
                         </thead>
-                        {{-- Uncomment this section when tours data is available --}}
-                        @if (isset($tours) && count($tours) > 0)
+                        @if (isset($data) && count($data) > 0)
                         <tbody class="fw-semibold text-gray-600">
-                            @foreach($tours as $tour)
+                            <?php
+                            $count=0;
+                            ?>
+                            @foreach($data as $tour)
+                            @php
+                            $info = json_decode($tour->info, true); // Decode the JSON string to an array
+                            @endphp
                             <tr>
                                 <td>
-                                    <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                        <input class="form-check-input" type="checkbox" value="1" />
-                                    </div>
+                                    {{++$count}}
                                 </td>
-                                <td class="text-end pe-0">
-                                    <span class="fw-bold">{{ $tour->custname }}</span>
+                                <td class=" pe-0">
+                                    <span class="fw-bold">{{ ucwords($info['fname'] ?? 'N/A') }}</span> <!-- Capitalize 'fname' -->
                                 </td>
-                                <td class="text-end pe-0">
-                                    <span class="fw-bold">{{ $tour->email }}</span>
+                                <td class=" pe-0">
+                                    <span class="fw-bold">{{ $info['email'] ?? 'N/A' }}</span> <!-- Accessing 'email' -->
                                 </td>
-                                <td class="text-end pe-0">
-                                    <span class="fw-bold">{{ $tour->phone }}</span>
+                                <td class=" pe-0">
+                                    <span class="fw-bold">{{ $info['phone'] ?? 'N/A' }}</span> <!-- Accessing 'phone' -->
                                 </td>
-                                <td class="text-end pe-0">
-                                    <span class="fw-bold">{{ $tour->subject }}</span>
+                                <td class=" pe-0">
+                                    <span class="fw-bold">{{ $info['subject'] ?? 'N/A' }}</span> <!-- Limit 'subject' to 30 characters -->
                                 </td>
-                                <td class="text-end pe-0">
-                                    <span class="fw-bold">{{ $tour->message }}</span>
+                                <td class=" pe-0">
+                                    <span class="fw-bold">{{ $info['msg'] ?? 'N/A' }}</span> <!-- Accessing 'msg' -->
                                 </td>
                             </tr>
                             @endforeach
                         </tbody>
+                        @else
+                        <tbody>
+                            <tr>
+                                <td colspan="6" class="text-center">No tours available.</td>
+                            </tr>
+                        </tbody>
                         @endif
                     </table>
+
+
                     <!--end::Table-->
                     <div class="d-flex justify-content-center mt-4">
                         <ul class="pagination">
