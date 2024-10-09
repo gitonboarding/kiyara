@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Enjoy Trip | Atreves</title>
+    <title>Kiyara Global Travels</title>
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">

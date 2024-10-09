@@ -43,8 +43,8 @@ Contact Us
                                 <th class="min-w-100px">Name</th>
                                 <th class="min-w-100px">Email</th>
                                 <th class="min-w-100px">Phone</th>
-                                <th class="min-w-100px">Subject</th>
-                                <th class="min-w-200px">Message</th>
+                                <th style="width: 300px;">Subject</th>
+                                <th style="width: 300px;">Message</th>
                             </tr>
                         </thead>
                         {{-- Uncomment this section when tours data is available --}}

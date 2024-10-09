@@ -67,7 +67,7 @@
                         <div class="form-group message">
                             <textarea class="form_style" placeholder="Message" rows="3" name="msg"></textarea>
                         </div>
-                        <button type="submit" id="submit" class="submit_now text-decoration-none">Read More<i class="fa-solid fa-arrow-right"></i></button>
+                        <button type="submit" id="submit" class="submit_now text-decoration-none">Submit</button>
                     </form>
                 </div>
             </div>

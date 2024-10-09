@@ -40,12 +40,12 @@ Total Enquiries
                                         <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_ecommerce_Tours_table .form-check-input" value="1" />
                                     </div>
                                 </th>
-                                <th class="min-w-200px">Tour Name</th>
+                                <th style="width: 250px;">Tour Name</th>
                                 <th class="min-w-100px">Name</th>
                                 <th class="min-w-100px">Email</th>
                                 <th class="min-w-100px">Phone</th>
                                 <th class="min-w-100px">No. of Persons</th>
-                                <th class="min-w-200px">Message</th>
+                                <th style="width: 300px;">Message</th>
                             </tr>
                         </thead>
                         {{-- Uncomment this section when tours data is available --}}

@@ -313,7 +313,7 @@
             Making Adventure Tours and Activities Accessible and Affordable
             for Everyone.
           </h2>
-          <a href="#" class="text-decoration-none all_button">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="text-decoration-none all_button">Find Tours<i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>

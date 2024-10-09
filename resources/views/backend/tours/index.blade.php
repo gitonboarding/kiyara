@@ -1,6 +1,6 @@
 @extends('layouts.index')
 @section('Heading')
-List tours
+List Of Tours
 @endsection
 @section('contents')
 
@@ -29,7 +29,7 @@ List tours
                     <!--end::Card title-->
                     <!--begin::Card toolbar-->
                     <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
-                        <a href="{{ route('tours.create') }}" class="btn btn-primary">Add Tour</a>
+                        <a href="{{ route('tours.create') }}" class="btn" style="background-color: #ab0919; color: #fff;">Add Tour</a>
                         <!--end::Add Tour-->
                     </div>
                     <!--end::Card toolbar-->
@@ -47,7 +47,7 @@ List tours
                                     </div>
                                 </th>
                                 <th >Image</th>
-                                <th class="min-w-200px">Tour Name</th>
+                                <th style="width: 300px;">Tour Name</th>
                                 <th class="text-end min-w-100px">Duration</th>
                                 <th class="text-end min-w-100px">No. of Persons</th>
                                 <th class="text-end min-w-100px">Category</th>
