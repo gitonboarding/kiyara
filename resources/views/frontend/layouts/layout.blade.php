@@ -161,69 +161,48 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="links">
                                 <h5 class="heading">Navigation</h5>
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="#">Home</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="about.html">About Us</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="#">About Us</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="destination.html">Destinations</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="#">Tours</a>
                                     </li>
                                     <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="contact.html">Contact</a>
+                                        <i class="fa-solid fa-arrow-right"></i><a href="#">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
-                            <div class="use-link links">
-                                <h5 class="heading">Explore</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="service.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="service.html">What We Offer</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="about.html">Our Story</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="single-blog.html">Latest Posts</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-arrow-right"></i><a href="contact.html">Help Center</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
                             <div class="icon">
                                 <h5 class="heading">Contact Us</h5>
                                 <ul class="list-unstyled mb-0">
                                     <li class="text">
                                         <i class="fa-solid fa-phone"></i>
-                                        <a href="tel:++61383766284" class="text-decoration-none">+61 3 8376 6284</a>
+                                        <a href="tel:+919867692948" class="text-decoration-none">+91 9867692948</a>
+                                    </li>
+                                    <li class="text">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <a href="tel:+919892132429" class="text-decoration-none">+91 9892132429</a>
                                     </li>
                                     <li class="text">
                                         <i class="fa-solid fa-envelope"></i>
                                         <a
-                                            href="mailto:info@atreves.com"
-                                            class="text-decoration-none">Info@atreves.com</a>
+                                            href="mailto:kiyaraglobaltravels@kiyara.net"
+                                            class="text-decoration-none">kiyaraglobaltravels@kiyara.net</a>
                                     </li>
                                     <li class="text">
                                         <i class="fa-solid fa-location-dot"></i>
                                         <a
-                                            href="https://www.google.com/maps/place/21+King+St,+Melbourne+VIC+3000,+Australia/@-37.8199805,144.9529083,18z/data=!4m6!3m5!1s0x6ad65d52754eaecb:0x22f367daf52cbd47!8m2!3d-37.819936!4d144.9570765!16s%2Fg%2F11c2dj2n2c?entry=ttu"
-                                            class="text-decoration-none address mb-0">21 King Street Melbourne, 3000, Australia
+                                            href=""
+                                            class="text-decoration-none address mb-0">No.67 Aircondition Market Tardeo, AC Market Tardeo, Mumbai - 400034
                                         </a>
                                     </li>
                                 </ul>
@@ -233,7 +212,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p class="mb-0">Copyright ©2024 Atreves.com All Rights Reserved</p>
+                <p class="mb-0">Copyright ©2024 Kiyara Global Travels. All Rights Reserved.</p>
             </div>
         </div>
     </section>
