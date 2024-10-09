@@ -56,8 +56,8 @@ List tours
                             </tr>
                         </thead>
                         {{-- Uncomment this section when tours data is available --}}
-                        @if (isset($tours) && count($tours) > 0)
                         <tbody class="fw-semibold text-gray-600">
+                            @if (isset($tours) && count($tours) > 0)
                             @foreach($tours as $tour)
                             <tr>
                                 <td>
@@ -130,8 +130,8 @@ List tours
                                 </td>
                             </tr>
                             @endforeach
+                            @endif 
                         </tbody>
-                        @endif 
                     </table>
                     <!--end::Table-->
                     <div class="d-flex justify-content-center mt-4">

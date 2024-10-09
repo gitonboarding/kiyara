@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('tours', function (Blueprint $table) {
             $table->id();
             $table->string('name');                  // Name of the tour
+            $table->string('slug');                  // Name of the tour
             $table->string('image');                 // Image URL or file path
             $table->string('duration');              // Duration of the tour (e.g., '3 days', '5 hours')
             $table->integer('parson_no');            // Number of persons

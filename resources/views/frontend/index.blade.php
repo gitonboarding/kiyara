@@ -353,16 +353,15 @@
                 </div>
               </div>
               <a
-                href="#"
+                href="{{url('tours/details', $destination->slug)}}"
                 class="text-decoration-none"
-                data-toggle="modal"
-                data-target="#blog-model-{{ $destination->id }}">
+                >
                 <h4>{{ $destination->name }}</h4>
               </a>
               <div class="value">
                 <span class="money">₹<span class="counter">{{ $destination->price }}</span></span>
                 <a
-                  href="#"
+                  href="{{url('tours/details', $destination->slug)}}"
                   class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
