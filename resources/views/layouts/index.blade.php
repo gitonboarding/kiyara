@@ -1066,7 +1066,7 @@
                                         <div class="menu-item show menu-here-bg me-0 me-lg-2">
                                             <!--begin:Menu link-->
                                             <span class="menu-link">
-                                                <a href="{{route('tours.index')}}">
+                                                <a href="{{route('tours.enquiry')}}">
                                                     <span class="menu-title">Enquiry</span>
                                                 </a>
                                                 <span class="menu-arrow d-lg-none"></span>

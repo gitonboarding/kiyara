@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use App\Models\Tours;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\{Storage,Log};
+use Illuminate\Support\Facades\{Storage, Log};
+use Illuminate\Support\Str;
 
 class ToursController extends Controller
 {
     public function index()
 
     {
+        // Fetch all tours from the database
         $tours = Tours::all();
         // dd($tours);
         return view('backend.tours.index', compact('tours'));
@@ -46,6 +48,7 @@ class ToursController extends Controller
         // Create a new tour instance
         $tour = new Tours();
         $tour->name = $request->input('tour_name');
+        $tour->slug = str::slug($request->input('tour_name'));
         $tour->duration = $request->input('tour_duration');
         $tour->parson_no = $request->input('parson_no');
         $tour->category = $request->input('category');
@@ -74,6 +77,7 @@ class ToursController extends Controller
     }
     public function update(Request $request, $id)
     {
+        // dd($request->all());
         // Validate the incoming request data
         $request->validate([
             'tour_name' => 'required|string|max:255',
@@ -90,21 +94,32 @@ class ToursController extends Controller
 
         // Update the tour fields
         $tour->name = $request->tour_name;
+        $tour->slug = Str::slug($request->tour_name);
         $tour->duration = $request->tour_duration;
         $tour->parson_no = $request->parson_no;
         $tour->category = $request->category;
         $tour->price = $request->price;
         $tour->dec = $request->description;
 
-        // Handle image upload
         if ($request->hasFile('image')) {
             // Delete the old image if it exists
             if ($tour->image) {
-                Storage::delete($tour->image);
+                // Create the file path relative to storage
+                $oldImagePath =  $tour->image; // Assuming $tour->image only contains the filename
+
+                // Check if the old image exists and delete it
+                if (Storage::disk('public')->exists($oldImagePath)) {
+                    Storage::disk('public')->delete($oldImagePath);
+                } else {
+                    Log::warning('Image file not found for deletion: ' . $oldImagePath);
+                }
             }
+
             // Store the new image
-            $tour->image = $request->file('image')->store('tours');
+            $tour->image = $request->file('image')->store('tours', 'public');
         }
+
+
 
         // Save the updated tour record
         $tour->save();
@@ -113,36 +128,34 @@ class ToursController extends Controller
         return redirect()->route('tours.index')->with('success', 'Tour updated successfully.');
     }
     public function destroy($id)
-{
-    $tour = Tours::find($id);
-    if (!$tour) {
-        abort(404);
-    }
-
-    $imagePath = $tour->image; // Assuming this stores the correct relative path
-
-    // Log the image path for debugging
-    Log::info('Attempting to delete image at path: ' . $imagePath);
-
-    // Check if the image exists before deletion
-    if ($imagePath) {
-        if (Storage::exists($imagePath)) {
-            Storage::delete($imagePath);
-            Log::info('Image deleted successfully: ' . $imagePath);
-        } else {
-            Log::warning('Image not found for deletion: ' . $imagePath);
-            // Log full path for verification
-            Log::warning('Full path to check: ' . storage_path('app/public/' . $imagePath));
+    {
+        $tour = Tours::find($id);
+        if (!$tour) {
+            abort(404);
         }
-    } else {
-        Log::warning('No image path found in the tour record.');
+
+        $imagePath = $tour->image; // Assuming this stores the correct relative path
+
+        // Log the image path for debugging
+        Log::info('Attempting to delete image at path: ' . $imagePath);
+
+        // Check if the image exists before deletion
+        if ($imagePath) {
+            if (Storage::exists($imagePath)) {
+                Storage::delete($imagePath);
+                Log::info('Image deleted successfully: ' . $imagePath);
+            } else {
+                Log::warning('Image not found for deletion: ' . $imagePath);
+                // Log full path for verification
+                Log::warning('Full path to check: ' . storage_path('app/public/' . $imagePath));
+            }
+        } else {
+            Log::warning('No image path found in the tour record.');
+        }
+
+        // Delete the tour record
+        $tour->delete();
+
+        return response()->json(['success' => true, 'message' => 'Tour deleted successfully.']);
     }
-
-    // Delete the tour record
-    $tour->delete();
-
-    return response()->json(['success' => true, 'message' => 'Tour deleted successfully.']);
-}
-
-
 }

@@ -9,7 +9,7 @@ Route::prefix('/')->group(function () {
     Route::get('/about', [HomeController::class, 'about']);
     Route::get('/contact', [HomeController::class, 'contact']);
     Route::get('/tours', [HomeController::class, 'tours']);
-    Route::get('/tours_details', [HomeController::class, 'tours_details']);
+    Route::get('/tours/details/{slug}', [HomeController::class, 'tours_details']);
     Route::get('/tours/{category?}', [HomeController::class, 'tours'])->name('tours.category');
     Route::post('tours/contact', [HomeController::class, 'contactussubmit'])->name('tours.contact');
 });
@@ -39,7 +39,7 @@ Route::middleware('auth')->group(function () {
 
         // Enquiry
 
-        Route::get('/tours', [EnquiryController::class, 'index'])->name('tours.index');
+        Route::get('/tours/enquiry', [EnquiryController::class, 'index'])->name('tours.enquiry');
     });
 });
 

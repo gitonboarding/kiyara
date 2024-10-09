@@ -38,9 +38,16 @@ class HomeController extends Controller
         return view('frontend.tours', compact('tours', 'category'));
     }
 
-    public function tours_details()
+    public function tours_details($slug)
     {
-        return view('frontend.tours_details');
+        // dd($slug);
+        $tour = Tours::where('slug', $slug)->first();
+        if (!$tour) {
+            abort(404);
+        }
+        // Fetch related tours based on category
+
+        return view('frontend.tours_details',compact('tour'));
     }
 
     public function contactussubmit(Request $request)
