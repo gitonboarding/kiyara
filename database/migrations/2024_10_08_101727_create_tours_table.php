@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('parson_no');            // Number of persons
             $table->string('category');              // Category of the tour (e.g., 'Adventure', 'Sightseeing')
             $table->decimal('price', 10, 2);         // Price of the tour
+            $table->enum('is_recommendation', ['1', '0'])->default('1');
             $table->text('dec')->nullable();         // Description of the tour (nullable)
             $table->softDeletes();                   // Soft delete column
             $table->timestamps();                    // Timestamps (created_at, updated_at)
