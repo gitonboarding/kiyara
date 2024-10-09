@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{ProfileController, HomeController, ToursController};
+use App\Http\Controllers\{EnquiryController, ProfileController, HomeController, ToursController};
 use Illuminate\Support\Facades\Route;
 
 // Public Routes
@@ -36,6 +36,10 @@ Route::middleware('auth')->group(function () {
         Route::get('/tours/{id}/edit', [ToursController::class, 'edit'])->name('tours.edit');
         Route::post('/tours/{id}', [ToursController::class, 'update'])->name('tours.update');
         Route::delete('/tours/{id}', [ToursController::class, 'destroy'])->name('tours.destroy');
+
+        // Enquiry
+
+        Route::get('/tours', [EnquiryController::class, 'index'])->name('tours.index');
     });
 });
 
