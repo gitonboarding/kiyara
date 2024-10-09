@@ -87,7 +87,7 @@
                                 <a class="nav-link" href="{{url('contact')}}">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link book_now" href="{{url('contact')}}">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                                <a class="nav-link book_now" href="{{url('contact')}}">Enquire Now<i class="fa-solid fa-arrow-right"></i></a>
                             </li>
                         </ul>
                     </div>

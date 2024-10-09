@@ -56,7 +56,6 @@
                             <p class="mb-0 text-size-16">Rerum hic tenetur a sapiente delectus au occae.</p>
                         </li>
                     </ul>
-                    <a href="./about.html" class="text-decoration-none all_button">Read More<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

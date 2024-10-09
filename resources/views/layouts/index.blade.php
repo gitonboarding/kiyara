@@ -55,8 +55,8 @@
                         <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
                             <a href="{{url('/')}}">
                                 <img alt="Logo" src="{{ asset('frontend/assets/images/logo.png')}}" class="h-25px d-sm-none" />
-                                <img alt="Logo" src="{{ asset('frontend/assets/images/logo.png')}}" class="h-40px d-none d-sm-inline app-sidebar-logo-default theme-light-show" />
-                                <img alt="Logo" src="{{ asset('frontend/assets/images/logo.png')}}" class="h-40px d-none d-sm-inline app-sidebar-logo-default theme-dark-show" />
+                                <img alt="Logo" src="{{ asset('frontend/assets/images/logo.png')}}" class="h-50px d-none d-sm-inline app-sidebar-logo-default theme-light-show" />
+                                <img alt="Logo" src="{{ asset('frontend/assets/images/logo.png')}}" class="h-50px d-none d-sm-inline app-sidebar-logo-default theme-dark-show" />
                             </a>
                         </div>
                         <!--end::Logo-->
@@ -1043,7 +1043,7 @@
                     <!--begin::Header secondary container-->
                     <div class="app-container container-xxl d-flex align-items-stretch" id="kt_app_header_secondary_container">
                         <!--begin::Secondary-->
-                        <div class="d-flex flex-stack flex-row-fluid" id="kt_app_header_wrapper">
+                        <div class="d-flex justify-content-center flex-stack flex-row-fluid" id="kt_app_header_wrapper">
                             <div class="">
                                 <!--begin::Menu wrapper-->
                                 <div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="{default: 'append', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}">
@@ -1066,7 +1066,7 @@
                                         <div class="menu-item show menu-here-bg me-0 me-lg-2">
                                             <!--begin:Menu link-->
                                             <span class="menu-link">
-                                                <a href="{{route('tours.index')}}">
+                                                <a href="{{route('enquiry.index')}}">
                                                     <span class="menu-title">Enquiry</span>
                                                 </a>
                                                 <span class="menu-arrow d-lg-none"></span>
@@ -1078,7 +1078,7 @@
                                         <div data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-0 me-lg-2">
                                             <!--begin:Menu link-->
                                             <span class="menu-link">
-                                                <a href="#">
+                                                <a href="{{route('contact.index')}}">
                                                     <span class="menu-title">Contact</span>
                                                 </a>
                                                 <span class="menu-arrow d-lg-none"></span>

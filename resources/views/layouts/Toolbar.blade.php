@@ -8,7 +8,7 @@
 			<div class="d-flex flex-column flex-row-fluid">
 				<!--begin::Toolbar wrapper-->
 				<!--begin::Breadcrumb-->
-				<ul class="breadcrumb breadcrumb-separatorless fw-semibold mb-1">
+				<ul class="breadcrumb breadcrumb-separatorless fw-semibold mb-5">
 					<!--begin::Item-->
 					<li class="breadcrumb-item text-gray-700 fw-bold lh-1">
 						<a href="#" class="text-white text-hover-primary">

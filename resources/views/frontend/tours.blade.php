@@ -7,14 +7,14 @@
         <div class="row">
             <div class="col-xl-6 col-md-8 col-12 mx-auto">
                 <div class="sub_banner_content" data-aos="fade-up">
-                    <h1 class="text-white">Destinations</h1>
+                    <h1 class="text-white">Tours</h1>
                     <p class="text-white text-size-16">Nuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore noulla pariatur ccaecat curidatat aero.</p>
                     <div class="box">
                         <a href="index.html" class="text-decoration-none">
                             <span class="mb-0">Home</span>
                         </a>
                         <i class="arrow fa-solid fa-arrow-right"></i>
-                        <span class="mb-0 box_span">Destinations</span>
+                        <span class="mb-0 box_span">Tours</span>
                     </div>
                 </div>
             </div>

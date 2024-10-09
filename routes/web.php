@@ -39,7 +39,8 @@ Route::middleware('auth')->group(function () {
 
         // Enquiry
 
-        Route::get('/tours', [EnquiryController::class, 'index'])->name('tours.index');
+        Route::get('/enquiry', [EnquiryController::class, 'enquiry'])->name('enquiry.index');
+        Route::get('/contact', [EnquiryController::class, 'contact'])->name('contact.index');
     });
 });
 
