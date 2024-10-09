@@ -11,7 +11,9 @@ class EnquiryController extends Controller
     public function enquiry()
     {
         // $data=contact
-        return view('backend.enquiry.index');
+        $data=contact::where('types','tour')->get();
+        // dd($data);
+        return view('backend.enquiry.index' ,compact('data'));
     }
 
     public function contact()

@@ -79,4 +79,37 @@ class HomeController extends Controller
         // Redirect back to the contact page with a success message
         return redirect()->back()->with('success', 'Your message has been sent successfully.');
     }
+
+    public function toursenquiry(Request $request)
+    {
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'fname' => 'required|string|max:255',
+            'phone' => 'required|string|max:15',
+            'email' => 'required|email|max:255',
+            'person' => 'required',
+            'msg' => 'nullable|string|max:1000',
+        ]);
+
+        // Create an associative array from the validated request data
+        $data = [
+            'tour_name' =>$request->tour_name,
+            'fname' => $validatedData['fname'],
+            'phone' => $validatedData['phone'],
+            'email' => $validatedData['email'],
+            'person' => $validatedData['person'],
+            'msg' => $validatedData['msg'],
+        ];
+
+        // Create a new contact instance
+        $contact = new Contact(); // Ensure 'Contact' is properly capitalized
+        $contact->types = $request->input('type'); // Assuming 'type' is coming from the request
+        $contact->info = json_encode($data); // Store the data as JSON in 'info'
+        $contact->save(); // Save the instance to the database
+
+        // Redirect back to the contact page with a success message
+        return redirect()->back()->with('success', 'Your message has been sent successfully.');
+    }
+
+    
 }

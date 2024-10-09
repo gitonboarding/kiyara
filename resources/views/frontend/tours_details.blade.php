@@ -48,28 +48,34 @@
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-2">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-1">
+
                 <div class="contact_content" data-aos="fade-up">
                     <h6 class="text-white">A Tour That Creates Lasting Memories...</h6>
                     <h2 class="text-white">Enquire Here</h2>
-                    <form id="contactpage" method="post" class="position-relative">
+                    <form id="contactpage" method="post" action="{{ route('enquiry.store') }}" class="position-relative">
+                        @csrf <!-- Add CSRF token for security -->
+                        <input type="hidden" name="type" value="tour">
+                        <input type="hidden" name="tour_name" value="{{$tour->name}}">
                         <div class="form-group input1 float-left">
-                            <input type="text" class="form_style" placeholder="Name" name="fname" id="fname" required>
+                            <input type="text" class="form_style" placeholder="Name" name="fname" id="fname" value="{{ old('fname') }}" required>
                         </div>
                         <div class="form-group float-left">
-                            <input type="tel" class="form_style" placeholder="Phone" name="phone" id="phone" required>
+                            <input type="tel" class="form_style" placeholder="Phone" name="phone" id="phone" value="{{ old('phone') }}" required>
                         </div>
                         <div class="form-group input1 float-left">
-                            <input type="email" class="form_style" placeholder="Email" name="email" id="email" required>
+                            <input type="email" class="form_style" placeholder="Email" name="email" id="email" value="{{ old('email') }}" required>
                         </div>
                         <div class="form-group float-left">
-                            <input type="number" min="1" max="10" class="form_style" placeholder="No. of person" name="person" id="person" required>
+                            <input type="number" min="1" max="10" class="form_style" placeholder="No. of person" name="person" id="person" value="{{ old('person') }}" required>
                         </div>
                         <div class="form-group message">
-                            <textarea class="form_style" placeholder="Message" rows="3" name="msg"></textarea>
+                            <textarea class="form_style" placeholder="Message" rows="3" name="msg">{{ old('msg') }}</textarea>
                         </div>
                         <button type="submit" id="submit" class="submit_now text-decoration-none">Submit</button>
                     </form>
                 </div>
+
+
             </div>
         </div>
     </div>
