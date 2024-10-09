@@ -10,6 +10,7 @@ Route::prefix('/')->group(function () {
     Route::get('/contact', [HomeController::class, 'contact']);
     Route::get('/tours', [HomeController::class, 'tours']);
     Route::get('/tours_details', [HomeController::class, 'tours_details']);
+    Route::get('/tours/{category?}', [HomeController::class, 'tours'])->name('tours.category');
 });
 
 // Authenticated Routes
