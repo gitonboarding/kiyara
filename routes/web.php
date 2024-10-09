@@ -11,6 +11,7 @@ Route::prefix('/')->group(function () {
     Route::get('/tours', [HomeController::class, 'tours']);
     Route::get('/tours_details', [HomeController::class, 'tours_details']);
     Route::get('/tours/{category?}', [HomeController::class, 'tours'])->name('tours.category');
+    Route::post('tours/contact', [HomeController::class, 'contactussubmit'])->name('tours.contact');
 });
 
 // Authenticated Routes

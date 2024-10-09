@@ -86,25 +86,62 @@
                 <div class="contact_content" data-aos="fade-up">
                     <h6 class="text-white">Get In Touch</h6>
                     <h2 class="text-white">Send us a Message</h2>
-                    <form id="contactpage" method="post" class="position-relative">
+
+                    <!-- Display success message -->
+                    @if (session('success'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('success') }}
+                    </div>
+                    @endif
+
+                    <form action="{{ route('tours.contact') }}" method="post" class="position-relative">
+                        @csrf
+                        <input type="hidden" name="type" value="contact">
+                        <!-- Name Field -->
                         <div class="form-group input1 float-left">
-                            <input type="text" class="form_style" placeholder="Name" name="fname" id="fname">
+                            <input type="text" class="form_style" placeholder="Name" name="fname" id="fname" value="{{ old('fname') }}" required>
+                            @error('fname')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
+
+                        <!-- Phone Field -->
                         <div class="form-group float-left">
-                            <input type="tel" class="form_style" placeholder="Phone" name="phone" id="phone">
+                            <input type="tel" class="form_style" placeholder="Phone" name="phone" id="phone" value="{{ old('phone') }}" required>
+                            @error('phone')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
+
+                        <!-- Email Field -->
                         <div class="form-group input1 float-left">
-                            <input type="email" class="form_style" placeholder="Email" name="email" id="email">
+                            <input type="email" class="form_style" placeholder="Email" name="email" id="email" value="{{ old('email') }}" required>
+                            @error('email')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
+
+                        <!-- Subject Field -->
                         <div class="form-group float-left">
-                            <input type="text" class="form_style" placeholder="Subject" name="subject" id="subject">
+                            <input type="text" class="form_style" placeholder="Subject" name="subject" id="subject" value="{{ old('subject') }}" required>
+                            @error('subject')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
+
+                        <!-- Message Field -->
                         <div class="form-group message">
-                            <textarea class="form_style" placeholder="Message" rows="3" name="msg"></textarea>
+                            <textarea class="form_style" placeholder="Message" rows="3" name="msg" required>{{ old('msg') }}</textarea>
+                            @error('msg')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
+
                         <button type="submit" id="submit" class="submit_now text-decoration-none">Read More<i class="fa-solid fa-arrow-right"></i></button>
                     </form>
                 </div>
+
+
             </div>
         </div>
     </div>
