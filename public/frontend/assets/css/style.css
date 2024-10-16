@@ -340,7 +340,7 @@ html{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/banner-backgroundimage.png);
+    background-image: url(../images/background.jpg);
 }
 .banner-con .banner_content {
     margin: 0 23px;
