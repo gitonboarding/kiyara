@@ -1,5 +1,5 @@
 @extends('frontend.layouts.layout')
-<base href="">
+
 @section('banner')
 <!-- Sub banner -->
 <section class="sub_banner_con position-relative">
@@ -22,6 +22,22 @@
     </div>
 </section>
 @endsection
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 150px;
+        /* Adjust width as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+        display: block;
+        /* Ensure images are displayed */
+    }
+</style>
 
 @section('contents')
 
@@ -86,47 +102,113 @@
 <section class="custform-con position-relative">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                 <h2 style="text-align: center; color:#fff; margin-bottom: 40px;">Customize your tour</h2>
                 <div class="contact_content" data-aos="fade-up">
-
                     <form id="contactpage" method="post" action="{{ route('enquiry.store') }}" class="position-relative">
-                        @csrf <!-- Add CSRF token for security -->
+                        @csrf
                         <input type="hidden" name="type" value="tour">
 
                         <div class="form-group">
-                            <select id="contentDropdown">
+                            <label for="contentDropdown" style="color:#fff;">Select a country</label>
+                            <select id="contentDropdown" class="form-control" onchange="updateGallery()">
                                 <option selected disabled>Select a country</option>
-                                <option value="section1">Section 1</option>
-                                <option value="section2">Section 2</option>
-                                <option value="section3">Section 3</option>
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="france">France</option>
+                                <option value="uk">UK</option>
+                                <option value="germany">Germany</option>
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="japan">Japan</option>
+                                <option value="brazil">Brazil</option>
+                                <option value="south_africa">South Africa</option>
                             </select>
                         </div>
-
-                        <!-- <a target="_blank"
-                            title="Contact Us On WhatsApp"
-                            href="https://wa.me/8928826063?text=Hi,%20I%20would%20like%20to%20get%20more%20information.."
-                            class="whatsapplink"
-                            style="background-color:#2DC100; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center;">
-                            <i class="fa fa-fw fa-whatsapp" style="color:#fff; font-size: 24px; margin-right: 10px;"></i>
-                            <span style="color:#fff; font-size: 16px;">Contact Us On WhatsApp</span>
-                        </a> -->
-
-
                     </form>
                 </div>
             </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="contact_content country-detail" data-aos="fade-up">
                     <div class="content-section" id="sideContent">
-                        <!-- The side content will change here -->
-                        <h3>Select a country to customize your tour.</h3>
+                        <h3 id="galleryTitle">Select a country to customize your tour.</h3>
+                        <div id="gallery" class="owl-carousel gallery"></div> <!-- Owl Carousel Container -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    // This function runs when the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        const galleries = {
+            india: [
+                'https://images.unsplash.com/photo-1523428461295-92770e70d7ae?q=80&w=1990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                'https://images.unsplash.com/photo-1545126178-862cdb469409?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                'https://images.unsplash.com/photo-1649203906735-b33faecbfb45?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                'https://images.unsplash.com/photo-1523428461295-92770e70d7ae?q=80&w=1990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                'https://images.unsplash.com/photo-1640674458300-db3eae079b1f?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                'https://images.unsplash.com/photo-1658316532318-8d9a5595293f?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            ],
+            usa: [
+                'https://images.unsplash.com/photo-1518458231900-41c00b2edb9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fHVzYXxlbnwwfHx8fDE2MTM2OTkyMTA&ixlib=rb-1.2.1&q=80&w=400',
+                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHVzYXxlbnwwfHx8fDE2MTM2OTkyMTA&ixlib=rb-1.2.1&q=80&w=400',
+                'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE4fHR1c2F8ZW58MHx8fHwxNjEzNjk5MjE0&ixlib=rb-1.2.1&q=80&w=400',
+                'https://images.unsplash.com/photo-1517065860619-5bb35e76c7ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHR1c2F8ZW58MHx8fHwxNjEzNjk5MjE0&ixlib=rb-1.2.1&q=80&w=400',
+                'https://images.unsplash.com/photo-1554757568-9bb4210e52ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHR1c2F8ZW58MHx8fHwxNjEzNjk5MjE0&ixlib=rb-1.2.1&q=80&w=400',
+                'https://images.unsplash.com/photo-1533597891762-c5ec8c2e140c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHR1c2F8ZW58MHx8fHwxNjEzNjk5MjE0&ixlib=rb-1.2.1&q=80&w=400',
+            ],
+            // Add other countries similarly...
+        };
+
+
+        window.updateGallery = function() {
+            const dropdown = document.getElementById('contentDropdown');
+            const selectedCountry = dropdown.value;
+            const galleryContainer = document.getElementById('gallery');
+            const galleryTitle = document.getElementById('galleryTitle');
+
+            // Clear the gallery
+            galleryContainer.innerHTML = '';
+
+            // Check if a valid country is selected
+            if (selectedCountry && galleries[selectedCountry]) {
+                // Update the title
+                galleryTitle.innerText = `Gallery for ${selectedCountry.charAt(0).toUpperCase() + selectedCountry.slice(1)}`;
+
+                // Populate the gallery
+                galleries[selectedCountry].forEach(src => {
+                    const item = document.createElement('div');
+                    item.classList.add('item'); // Owl Carousel item class
+                    item.innerHTML = `<img src="${src}" alt="${selectedCountry} Gallery">`;
+                    galleryContainer.appendChild(item);
+                });
+
+                // Initialize Owl Carousel
+                $(galleryContainer).owlCarousel({
+                    items: 3, // Number of items to display
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    dots: true,
+                });
+            } else {
+                galleryTitle.innerText = 'Select a country to customize your tour.';
+            }
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
 
 
 <!-- Testimonial -->
