@@ -75,14 +75,14 @@
                             <input type="number" min="1" class="form_style" placeholder="No. of child" name="childperson" id="childperson" value="{{ old('person') }}" required>
                         </div>
                         <div class="form-group input1 float-left">
+                            <input type="number" min="1" max="20" class="form_style" placeholder="Total days" name="totaldays" id="totaldays" value="{{ old('person') }}" required>
+                        </div>
+                        <div class="form-groupfloat-left">
                             <select class="form_style" placeholder="Type of meal" name="meal" id="meal" value="{{ old('person') }}" required>
                                 <option value="" selected disabled>Type of meal</option>
                                 <option value="veg">Veg</option>
                                 <option value="non-veg">Non-Veg</option>
                             </select>
-                        </div>
-                        <div class="form-group float-left">
-                            <input type="number" min="1" class="form_style" placeholder="No. of child" name="childperson" id="childperson" value="{{ old('person') }}" required>
                         </div>
                         <div class="form-group message">
                             <textarea class="form_style" placeholder="Message" rows="3" name="msg" id="msg">{{ old('msg') }}</textarea>
