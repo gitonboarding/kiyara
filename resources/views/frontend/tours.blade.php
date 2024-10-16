@@ -49,7 +49,7 @@
                     <div class="row" data-aos="fade-up">
                         @foreach($tours as $tour)
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <a href="#" class="text-decoration-none">
+                            <a href="{{url('tours/details', $tour->slug)}}" class="text-decoration-none">
                                 <div class="place-box">
                                     <figure class="image mb-0">
                                         <img src="{{ asset('storage/' . $tour->image) }}" alt="{{ $tour->name }}" class="img-fluid">

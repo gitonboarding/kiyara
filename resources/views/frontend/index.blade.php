@@ -86,29 +86,31 @@
     <div class="row" data-aos="fade-up">
       <div class="owl-carousel">
         @foreach($exploretours as $tour)
-        <div class="item">
-          <div class="explore-box">
-            <figure class="image mb-0">
-              <img
-                src="{{ asset('storage/' . $tour->image) }}"
-                alt="{{ $tour->name }}"
-                class="img-fluid" />
-            </figure>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <span class="text-white">{{ $tour->category }}</span>
-            </div>
-            <div class="content">
-              <div class="text">
-                <div class="place">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <span class="text-white">{{ $tour->places }} Places</span>
+        <a href="{{url('tours/details', $tour->slug)}}" class="text-decoration-none">
+          <div class="item">
+            <div class="explore-box">
+              <figure class="image mb-0">
+                <img
+                  src="{{ asset('storage/' . $tour->image) }}"
+                  alt="{{ $tour->name }}"
+                  class="img-fluid" />
+              </figure>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="text-white">{{ $tour->category }}</span>
+              </div>
+              <div class="content">
+                <div class="text">
+                  <div class="place">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="text-white">{{ $tour->places }} Places</span>
+                  </div>
+                  <h4 class="text-white mb-0">{{ $tour->name }}</h4>
                 </div>
-                <h4 class="text-white mb-0">{{ $tour->name }}</h4>
               </div>
             </div>
           </div>
-        </div>
+        </a>
         @endforeach
       </div>
     </div>
@@ -334,38 +336,39 @@
       <div class="owl-carousel owl-theme">
         @foreach($is_recommendation as $destination)
         <div class="item">
-          <div class="place-box">
-            <figure class="image mb-0">
-              <img
-                src="{{ asset('storage/' . $destination->image) }}"
-                alt="{{ $destination->title }}"
-                class="img-fluid" />
-            </figure>
-            <div class="lower_content">
-              <div class="content">
-                <div class="calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  <span class="day">{{ $destination->duration }}</span>
+          <a href="{{url('tours/details', $destination->slug)}}" class="text-decoration-none">
+            <div class="place-box">
+              <figure class="image mb-0">
+                <img
+                  src="{{ asset('storage/' . $destination->image) }}"
+                  alt="{{ $destination->title }}"
+                  class="img-fluid" />
+              </figure>
+              <div class="lower_content">
+                <div class="content">
+                  <div class="calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="day">{{ $destination->duration }}</span>
+                  </div>
+                  <div class="people">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="person">{{ $destination->parson_no }}</span>
+                  </div>
                 </div>
-                <div class="people">
-                  <i class="fa-solid fa-user"></i>
-                  <span class="person">{{ $destination->parson_no }}</span>
-                </div>
-              </div>
-              <a
-                href="{{url('tours/details', $destination->slug)}}"
-                class="text-decoration-none"
-                >
-                <h4>{{ $destination->name }}</h4>
-              </a>
-              <div class="value">
-                <span class="money">₹<span class="counter">{{ $destination->price }}</span></span>
                 <a
                   href="{{url('tours/details', $destination->slug)}}"
-                  class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i></a>
+                  class="text-decoration-none">
+                  <h4>{{ $destination->name }}</h4>
+                </a>
+                <div class="value">
+                  <span class="money">₹<span class="counter">{{ $destination->price }}</span></span>
+                  <a href="{{url('tours/details', $destination->slug)}}"
+                    class="text-decoration-none book_now">Book Now<i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         @endforeach
       </div>
