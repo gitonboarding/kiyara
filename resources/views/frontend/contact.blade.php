@@ -12,7 +12,7 @@
                     <h1 class="text-white">Contact Us</h1>
                     <p class="text-white text-size-16">Kuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore noulla pariatur ccaecat curidatat aero.</p>
                     <div class="box">
-                        <a href="index.html" class="text-decoration-none">
+                        <a href="{{'/'}}" class="text-decoration-none">
                             <span class="mb-0">Home</span>
                         </a>
                         <i class="arrow fa-solid fa-arrow-right"></i>

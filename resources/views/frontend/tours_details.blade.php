@@ -10,7 +10,7 @@
                     <p class="text-white text-size-16"><i class="fa-solid fa-calendar-days"></i> {{$tour->duration}} <span>|</span> <i class="fa-solid fa-user"></i> {{$tour->parson_no}}</p>
                     <p class="text-white text-size-16"></p>
                     <div class="box">
-                        <a href="index.html" class="text-decoration-none">
+                        <a href="{{'/'}}" class="text-decoration-none">
                             <span class="mb-0">Home</span>
                         </a>
                         <i class="arrow fa-solid fa-arrow-right"></i>
