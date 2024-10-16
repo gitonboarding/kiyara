@@ -109,7 +109,4 @@ Total Enquiries
     <!--end::Content wrapper-->
 </div>
 <!--end::Main-->
-
-
-
 @endsection

@@ -83,6 +83,52 @@
     </div>
 </section>
 
+<section class="custform-con position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 style="text-align: center; color:#fff; margin-bottom: 40px;">Customize your tour</h2>
+                <div class="contact_content" data-aos="fade-up">
+
+                    <form id="contactpage" method="post" action="{{ route('enquiry.store') }}" class="position-relative">
+                        @csrf <!-- Add CSRF token for security -->
+                        <input type="hidden" name="type" value="tour">
+
+                        <div class="form-group">
+                            <select id="contentDropdown">
+                                <option selected disabled>Select a country</option>
+                                <option value="section1">Section 1</option>
+                                <option value="section2">Section 2</option>
+                                <option value="section3">Section 3</option>
+                            </select>
+                        </div>
+
+                        <!-- <a target="_blank"
+                            title="Contact Us On WhatsApp"
+                            href="https://wa.me/8928826063?text=Hi,%20I%20would%20like%20to%20get%20more%20information.."
+                            class="whatsapplink"
+                            style="background-color:#2DC100; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center;">
+                            <i class="fa fa-fw fa-whatsapp" style="color:#fff; font-size: 24px; margin-right: 10px;"></i>
+                            <span style="color:#fff; font-size: 16px;">Contact Us On WhatsApp</span>
+                        </a> -->
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="contact_content country-detail" data-aos="fade-up">
+                    <div class="content-section" id="sideContent">
+                        <!-- The side content will change here -->
+                        <h3>Select a country to customize your tour.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Testimonial -->
 <section class="testimonial-con position-relative">
     <div class="container">
@@ -189,6 +235,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- Partner -->
 <section class="partner-con">

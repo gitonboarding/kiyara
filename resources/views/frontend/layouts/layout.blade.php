@@ -213,6 +213,64 @@
     <script src="{{ asset('frontend/assets/js/back-to-top-button.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/preloader.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/counter.js') }}"></script>
+    <script>
+        // Function to get today's date in yyyy-mm-dd format
+        function getTodayDate() {
+            let today = new Date();
+            let day = String(today.getDate()).padStart(2, '0');
+            let month = String(today.getMonth() + 1).padStart(2, '0');
+            let year = today.getFullYear();
+            return `${year}-${month}-${day}`;
+        }
+
+        // Function to convert date to dd/mm/yyyy format
+        function formatDateToDDMMYYYY(date) {
+            let day = String(date.getDate()).padStart(2, '0');
+            let month = String(date.getMonth() + 1).padStart(2, '0');
+            let year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        const deptDateInput = document.getElementById('deptdate');
+
+        // On focus, change input type to date and set minimum date to today
+        deptDateInput.addEventListener('focus', function() {
+            deptDateInput.type = 'date';
+            deptDateInput.min = getTodayDate();
+        });
+
+        // On input (when date is selected), format it to dd/mm/yyyy instantly
+        deptDateInput.addEventListener('input', function() {
+            if (deptDateInput.value) {
+                let selectedDate = new Date(deptDateInput.value);
+                deptDateInput.type = 'text'; // Change input back to text
+                deptDateInput.value = formatDateToDDMMYYYY(selectedDate); // Show formatted date
+            }
+        });
+
+        // Reset to text type if input is cleared
+        deptDateInput.addEventListener('blur', function() {
+            if (!deptDateInput.value) {
+                deptDateInput.type = 'text';
+            }
+        });
+    </script>
+
+    <script>
+        const contentDropdown = document.getElementById("contentDropdown");
+        const sideContent = document.getElementById("sideContent");
+
+        const contentData = {
+            section1: "<h2>Content for Section 1</h2><p>This is the content for section 1.</p>",
+            section2: "<h2>Content for Section 2</h2><p>This is the content for section 2.</p>",
+            section3: "<h2>Content for Section 3</h2><p>This is the content for section 3.</p>",
+        };
+
+        contentDropdown.addEventListener("change", function() {
+            const selectedValue = this.value;
+            sideContent.innerHTML = contentData[selectedValue] || "<p>Select a section to display content here.</p>";
+        });
+    </script>
 
 
 </body>

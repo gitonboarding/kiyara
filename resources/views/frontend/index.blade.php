@@ -124,13 +124,13 @@
         <div class="about_wrapper position-relative" data-aos="zoom-in">
           <figure class="about-image mb-0">
             <img
-              src="{{ asset('frontend/assets/images/travel-2.jpg')}}"
+              src="{{ asset('frontend/assets/images/about-us.jpg')}}"
               alt="image"
               class="img-fluid" />
           </figure>
           {{--<figure class="about-locationimage mb-0">
                 <img
-                  src="{{ asset('frontend/assets/images/about-locationimage.png')}}"
+                  src="{{ asset('frontend/assets/images/about-us.png')}}"
           alt="image"
           class="img-fluid"
           />
@@ -157,7 +157,7 @@
               </figure>
             </div>
             <div class="text">
-              <span class="value"><span class="numb counter">156</span>+</span>
+              <span class="value"><span class="numb counter">1500</span>+</span>
               <span class="review">Satisfied Clients</span>
             </div>
           </div>
@@ -174,12 +174,12 @@
           </p>
           <ul class="list-unstyled mb-0">
             <li>
-              <span class="value"><span class="counter">15</span>k</span>
-              <p class="text-size-14 mb-0">Success Journey</p>
+              <span class="value"><span class="counter">500</span>+</span>
+              <p class="text-size-14 mb-0">Successful Tours</p>
             </li>
             <li>
-              <span class="value"><span class="counter">26</span>+</span>
-              <p class="text-size-14 mb-0">Awards Win</p>
+              <span class="value"><span class="counter">190</span>+</span>
+              <p class="text-size-14 mb-0">Total Countries</p>
             </li>
             <li>
               <span class="value"><span class="counter">30</span>+</span>
@@ -345,11 +345,11 @@
               <div class="content">
                 <div class="calendar">
                   <i class="fa-solid fa-calendar-days"></i>
-                  <span class="day">{{ $destination->duration }} Days</span>
+                  <span class="day">{{ $destination->duration }}</span>
                 </div>
                 <div class="people">
                   <i class="fa-solid fa-user"></i>
-                  <span class="person">{{ $destination->parson_no }} Person</span>
+                  <span class="person">{{ $destination->parson_no }}</span>
                 </div>
               </div>
               <a

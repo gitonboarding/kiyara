@@ -624,7 +624,7 @@ html{
 }
 .about-con .about_wrapper .box{
     left: -60px;
-    bottom: 290px;
+    top: 50px;
     width: 258px;
     height: 73px;
     padding: 10px 15px;
@@ -677,9 +677,9 @@ html{
     margin-bottom: 50px;
 }
 .about-con .about_content li{
-    width: 134px;
-    height: 139px;
-    padding: 28px 32px;
+    width: 160px;
+    height: 120px;
+    padding: 28px 15px;
     margin: 0 8px;
     border-radius: 8px;
     display: inline-block;
@@ -691,7 +691,7 @@ html{
     box-shadow: 0 1px 94px 1px rgb(0 0 0 / 15%);
 }
 .about-con .about_content li .value{
-    font-size: 36px;
+    font-size: 32px;
     line-height: 36px;
     font-weight: 700;
     display: block;
@@ -1409,6 +1409,60 @@ html{
     color: var(--e-global-color-accent);
 }
 
+/* Customized Form */
+
+.custform-con {
+    padding: 158px 0 195px;
+    background-color: var(--e-global-color-accent);
+    
+}
+
+.custform-con .contact_content select {
+    width: 50%;
+}
+
+/* .custform-con::before {
+    content: "";
+    width: 49%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: url(../images/travel-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+.custform-con .contact-bottomimage {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.custform-con .contact-bottomimage img{
+    opacity: 10%;
+}
+.custform-con .contact_wrapper {
+    display: none;
+}
+.custform-con .contact_content{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.custform-con .contact_content h6{
+    margin-bottom: 10px;
+}
+.custform-con .contact_content h2{
+    margin-bottom: 38px;
+}
+.custform-con .contact_content .form-group{
+    margin-bottom: 22px;
+}
+.custform-con .contact_content .input1 {
+    float: left;
+    margin-right: 22px;
+}
+
 /* Contact Form */
 
 .contactform-con {
@@ -1455,8 +1509,9 @@ html{
     float: left;
     margin-right: 22px;
 }
-.contactform-con .contact_content input,
-.contactform-con .contact_content textarea {
+.contact_content input,
+.contact_content textarea,
+.contact_content select {
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
@@ -1466,12 +1521,11 @@ html{
     color: var(--e-global-color-text);
     background-color: var(--e-global-color-white);
     border: 1px solid var(--e-global-color-white);
-    font-family: "Rajdhani", sans-serif;
     border-radius: 8px;
     overflow: visible;
     outline: none;
 }
-.contactform-con .contact_content textarea {
+.contact_content textarea {
     height: 118px;
     width: 100% !important;
     padding: 16px 26px;
@@ -1479,15 +1533,15 @@ html{
     outline: none;
     overflow: auto;
 }
-.contactform-con .contact_content .message {
+.contact_content .message {
     margin-bottom: 22px;
 }
-.contactform-con .contact_content input:focus,
-.contactform-con .contact_content textarea:focus {
+.contact_content input:focus,
+.contact_content textarea:focus {
     box-shadow: 2px 3px 42px rgb(55 225 197 / 16%);
     border: 1px solid var(--e-global-color-secondary);
 }
-.contactform-con .contact_content .submit_now {
+.contact_content .submit_now {
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -1504,25 +1558,25 @@ html{
     outline: none;
     border-style: none;
 }
-.contactform-con .contact_content .submit_now:hover {
+.contact_content .submit_now:hover {
     color: var(--e-global-color-secondary);
     background-color: var(--e-global-color-white);
 }
-.contactform-con .contact_content .submit_now i {
+.contact_content .submit_now i {
     font-size: 12px;
     margin-left: 22px;
     color: var(--e-global-color-white);
     transition: all 0.8s ease-in-out;
 }
-.contactform-con .contact_content .submit_now:hover i {
+.contact_content .submit_now:hover i {
     transform: translateX(4px);
     color: var(--e-global-color-secondary);
 }
-.contactform-con .contact_content input::placeholder,
-.contactform-con .contact_content textarea::placeholder{
+.contact_content input::placeholder,
+.contact_content textarea::placeholder{
     color: var(--e-global-color-text);
 }
-.contactform-con .contact_content form span {
+.contact_content form span {
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
