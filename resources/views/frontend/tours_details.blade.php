@@ -66,7 +66,23 @@
                             <input type="email" class="form_style" placeholder="Email" name="email" id="email" value="{{ old('email') }}" required>
                         </div>
                         <div class="form-group float-left">
-                            <input type="number" min="1" max="10" class="form_style" placeholder="No. of persons" name="person" id="person" value="{{ old('person') }}" required>
+                            <input type="text" class="form_style" name="date" id="deptdate" placeholder="dd/mm/yyyy" required>
+                        </div>
+                        <div class="form-group input1 float-left">
+                            <input type="number" min="1" class="form_style" placeholder="No. of adults" name="adultperson" id="adultperson" value="{{ old('person') }}" required>
+                        </div>
+                        <div class="form-group float-left">
+                            <input type="number" min="1" class="form_style" placeholder="No. of child" name="childperson" id="childperson" value="{{ old('person') }}" required>
+                        </div>
+                        <div class="form-group input1 float-left">
+                            <select class="form_style" placeholder="Type of meal" name="meal" id="meal" value="{{ old('person') }}" required>
+                                <option value="" selected disabled>Type of meal</option>
+                                <option value="veg">Veg</option>
+                                <option value="non-veg">Non-Veg</option>
+                            </select>
+                        </div>
+                        <div class="form-group float-left">
+                            <input type="number" min="1" class="form_style" placeholder="No. of child" name="childperson" id="childperson" value="{{ old('person') }}" required>
                         </div>
                         <div class="form-group message">
                             <textarea class="form_style" placeholder="Message" rows="3" name="msg" id="msg">{{ old('msg') }}</textarea>
@@ -137,5 +153,7 @@
         <img src="{{ asset('frontend/assets/images/activity-bottomimage.png')}}" alt="image" class="img-fluid">
     </figure>
 </section>
+<script>
 
+</script>
 @endsection

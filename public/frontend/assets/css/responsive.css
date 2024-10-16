@@ -178,8 +178,8 @@ h3 {font-size: 20px; line-height: 22px;}
 .about-con .about_content h6 {margin-bottom: 6px;}
 .about-con .about_content h2 {margin-bottom: 15px;}
 .about-con .about_content .text{margin-bottom: 35px;}
-.about-con .about_content li {width: 122px; height: 122px; padding: 22px 28px;}
-.about-con .about_content li .value {font-size: 32px; line-height: 32px;}
+.about-con .about_content li {width: 122px; height: 122px; padding: 22px 15px;}
+.about-con .about_content li .value {font-size: 28px; line-height: 32px;}
 .service-con {padding: 80px 0 50px;}
 .service-con .service_content h6 {margin-bottom: 8px;}
 .service-con .service_content h2 {margin-bottom: 35px;}
