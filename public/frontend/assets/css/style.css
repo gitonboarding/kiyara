@@ -827,6 +827,7 @@ html{
 }
 .place-con .place-box .image {
     overflow: hidden;
+    height: 300px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     background-color: var(--e-global-color-black);
