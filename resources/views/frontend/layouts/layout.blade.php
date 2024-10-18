@@ -96,7 +96,7 @@
                                 <figure class="footer-logo mb-0">
                                     <img
                                         class="img-fluid"
-                                        src="{{ asset('frontend/assets/images/footer-logo.png')}}"
+                                        src="{{ asset('frontend/assets/images/logo.png')}}"
                                         alt="image" />
                                 </figure>
                             </a>
@@ -256,21 +256,7 @@
         });
     </script>
 
-    <script>
-        const contentDropdown = document.getElementById("contentDropdown");
-        const sideContent = document.getElementById("sideContent");
-
-        const contentData = {
-            section1: "<h2>Content for Section 1</h2><p>This is the content for section 1.</p>",
-            section2: "<h2>Content for Section 2</h2><p>This is the content for section 2.</p>",
-            section3: "<h2>Content for Section 3</h2><p>This is the content for section 3.</p>",
-        };
-
-        contentDropdown.addEventListener("change", function() {
-            const selectedValue = this.value;
-            sideContent.innerHTML = contentData[selectedValue] || "<p>Select a section to display content here.</p>";
-        });
-    </script>
+    
 
 
 </body>
